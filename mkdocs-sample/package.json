@@ -1,0 +1,25 @@
+{
+  "name": "eva-mkdocs-gcds-theme",
+  "version": "1.0.0",
+  "description": "MkDocs with GC Design System (GCDS) custom theme - built fresh for WCAG 2.1 AA compliance",
+  "scripts": {
+    "postinstall": "node copy-gcds-assets.js"
+  },
+  "dependencies": {
+    "@cdssnc/gcds-components": "0.47.0"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "docs/eva-foundation/projects/10-MkDocs-PoC/mkdocs-sample"
+  },
+  "keywords": [
+    "mkdocs",
+    "gcds",
+    "government-of-canada",
+    "web-components",
+    "wcag",
+    "accessibility"
+  ],
+  "author": "ESDC/EDSC",
+  "license": "SEE LICENSE IN PROJECT"
+}

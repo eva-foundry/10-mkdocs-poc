@@ -1,0 +1,18 @@
+# MkDocs GCDS Theme - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core MkDocs
+mkdocs>=1.5.0,<2.0.0
+
+# Markdown extensions
+pymdown-extensions>=10.0
+
+# Validation dependencies (for scripts/)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Note: Browser automation limitations in enterprise environment
+# Selenium and axe-selenium-python not available in enterprise Python repos
+# WCAG/accessibility testing requires manual validation per VALIDATION-CHECKLIST.md
+# Or use browser extensions: axe DevTools, WAVE, Lighthouse
+# For local development: pip install selenium>=4.15.0 webdriver-manager>=4.0.0

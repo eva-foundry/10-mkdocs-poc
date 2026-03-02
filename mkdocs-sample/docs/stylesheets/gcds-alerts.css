@@ -1,0 +1,249 @@
+/**
+ * GCDS Alert Styling - Canada.ca Contextual Alerts
+ * Maps Material for MkDocs admonition types to Government of Canada alert patterns
+ * 
+ * Reference: https://design.canada.ca/common-design-patterns/contextual-alerts.html
+ * 
+ * NOTE: GCDS Alert component is "coming soon" as of Jan 2026 (v0.47.0)
+ * This CSS provides interim styling until <gcds-alert> is officially released
+ */
+
+/* ============================================
+   BASE ALERT STRUCTURE
+   ============================================ */
+
+.alert {
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  border-radius: 4px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.alert h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.alert p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   CANADA.CA ALERT VARIANTS
+   ============================================ */
+
+/* INFO ALERT (Blue) - General information */
+.alert-info,
+.admonition.note,
+.admonition.info,
+.admonition.abstract {
+  background-color: #d7faff;
+  border-left-color: #269abc;
+  color: #000;
+}
+
+.alert-info h4,
+.admonition.note .admonition-title,
+.admonition.info .admonition-title,
+.admonition.abstract .admonition-title {
+  color: #269abc;
+}
+
+/* SUCCESS ALERT (Green) - Positive outcomes */
+.alert-success,
+.admonition.success,
+.admonition.tip,
+.admonition.example {
+  background-color: #d8eeca;
+  border-left-color: #278400;
+  color: #000;
+}
+
+.alert-success h4,
+.admonition.success .admonition-title,
+.admonition.tip .admonition-title,
+.admonition.example .admonition-title {
+  color: #278400;
+}
+
+/* WARNING ALERT (Orange) - Important notices */
+.alert-warning,
+.admonition.warning,
+.admonition.question {
+  background-color: #fff4e5;
+  border-left-color: #ff9900;
+  color: #000;
+}
+
+.alert-warning h4,
+.admonition.warning .admonition-title,
+.admonition.question .admonition-title {
+  color: #ff9900;
+}
+
+/* DANGER ALERT (Red) - Errors and critical issues */
+.alert-danger,
+.admonition.danger,
+.admonition.failure,
+.admonition.bug {
+  background-color: #ffe5e6;
+  border-left-color: #d3080c;
+  color: #000;
+}
+
+.alert-danger h4,
+.admonition.danger .admonition-title,
+.admonition.failure .admonition-title,
+.admonition.bug .admonition-title {
+  color: #d3080c;
+}
+
+/* QUOTE (Blockquote styling) */
+.admonition.quote,
+.well {
+  background-color: #f5f5f5;
+  border-left-color: #777;
+  padding: 1.5rem;
+  font-style: italic;
+}
+
+/* ============================================
+   ADMONITION TITLE STYLING
+   ============================================ */
+
+.admonition-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon spacing (if using Material icons) */
+.admonition-title::before {
+  margin-right: 0.5rem;
+}
+
+/* ============================================
+   COLLAPSIBLE ADMONITIONS (<details>)
+   Styled with GCDS design tokens
+   ============================================ */
+
+details.admonition {
+  border-left: 4px solid;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+details.admonition summary {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.02);
+  transition: background-color 0.2s ease;
+}
+
+details.admonition summary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+details.admonition summary::marker {
+  color: currentColor;
+}
+
+/* Expand/collapse indicator */
+details.admonition summary::after {
+  content: "▼";
+  float: right;
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+details.admonition[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+details.admonition .admonition-content {
+  padding: 1rem 1.5rem;
+}
+
+/* NOTE: Collapsible state persistence
+ * localStorage persistence is NOT implemented to keep the implementation simple.
+ * Users' expand/collapse preferences will reset on page reload.
+ * 
+ * To add persistence in the future:
+ * - Add data-admonition-id attribute to each details element
+ * - Store state in localStorage on toggle
+ * - Restore state on page load
+ */
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .alert,
+  .admonition {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .alert h4,
+  .admonition-title {
+    font-size: 1rem;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+.alert:focus-within,
+.admonition:focus-within {
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .alert,
+  .admonition {
+    border-left-width: 6px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  details.admonition summary,
+  details.admonition summary::after {
+    transition: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .alert,
+  .admonition {
+    border: 2px solid;
+    page-break-inside: avoid;
+  }
+  
+  details.admonition {
+    border: 2px solid;
+  }
+  
+  details.admonition summary::after {
+    display: none;
+  }
+  
+  details.admonition:not([open]) .admonition-content {
+    display: block !important;
+  }
+}

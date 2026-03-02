@@ -1,0 +1,511 @@
+{
+  "timestamp": "2026-01-24T12:30:57.938573",
+  "site_directory": "C:\\Users\\marco.presta\\OneDrive - ESDC EDSC\\Documents\\AICOE\\EVA-JP-v1.2\\docs\\eva-foundation\\projects\\10-MkDocs-PoC\\mkdocs-sample\\site",
+  "docs_directory": "C:\\Users\\marco.presta\\OneDrive - ESDC EDSC\\Documents\\AICOE\\EVA-JP-v1.2\\docs\\eva-foundation\\projects\\10-MkDocs-PoC\\mkdocs-sample\\docs",
+  "summary": {
+    "total_html_files": 32,
+    "total_links_checked": 1120,
+    "total_images_checked": 75,
+    "total_anchors_checked": 0,
+    "broken_links": 20,
+    "broken_images": 0,
+    "broken_anchors": 0,
+    "status": "FAIL"
+  },
+  "broken_links": [
+    {
+      "source_file": "getting-started\\index.html",
+      "type": "link",
+      "url": "../governance/audit-logging/#audit-event-fields",
+      "text": "Audit logging fields",
+      "reason": "Target page not found: ../governance/audit-logging/"
+    },
+    {
+      "source_file": "library\\index.html",
+      "type": "link",
+      "url": "techdes-conops/",
+      "text": "View EVA Book \u2192",
+      "reason": "Target page not found: techdes-conops/"
+    },
+    {
+      "source_file": "MIGRATION\\index.html",
+      "type": "link",
+      "url": "../fr/under-construction.md",
+      "text": "docs/fr/under-construction.md",
+      "reason": "Target page not found: ../fr/under-construction.md"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/00_source_summary/",
+      "text": "00. Source Summary",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/00_source_summary/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/01_scope_and_context/",
+      "text": "01. Scope and Context",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/01_scope_and_context/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/02_architecture_principles/",
+      "text": "02. Architecture Principles",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/02_architecture_principles/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/03_eva_chat_requirements/",
+      "text": "03. EVA Chat Requirements",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/03_eva_chat_requirements/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/04_eva_da_requirements/",
+      "text": "04. EVA Data Assistant Requirements",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/04_eva_da_requirements/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/05_security_audit_ops/",
+      "text": "05. Security, Audit & Operations",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/05_security_audit_ops/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/06_testing_prioritization/",
+      "text": "06. Testing & Prioritization",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/06_testing_prioritization/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/copilot-system/",
+      "text": "Copilot System Instructions",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/copilot-system/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/COPILOT_GUARDRAILS/",
+      "text": "Copilot Guardrails",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/COPILOT_GUARDRAILS/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../assets/reference-docs/techdes-conops-v02/AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf",
+      "text": "AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf",
+      "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../architecture/overview/",
+      "text": "Architecture Overview",
+      "reason": "Target page not found: ../../architecture/overview/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../deployment/azure/",
+      "text": "Deployment Guide",
+      "reason": "Target page not found: ../../deployment/azure/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../governance/principles/",
+      "text": "Governance Principles",
+      "reason": "Target page not found: ../../governance/principles/"
+    },
+    {
+      "source_file": "library\\techdes-conops\\index.html",
+      "type": "link",
+      "url": "../../ops/runbook/",
+      "text": "Operations Runbook",
+      "reason": "Target page not found: ../../ops/runbook/"
+    },
+    {
+      "source_file": "governance\\principles\\index.html",
+      "type": "link",
+      "url": "../audit-logging/",
+      "text": "Audit Logging",
+      "reason": "Target page not found: ../audit-logging/"
+    },
+    {
+      "source_file": "architecture\\overview\\index.html",
+      "type": "link",
+      "url": "../data-flow/",
+      "text": "Data Flow",
+      "reason": "Target page not found: ../data-flow/"
+    },
+    {
+      "source_file": "architecture\\overview\\index.html",
+      "type": "link",
+      "url": "../../governance/principles/",
+      "text": "Governance Principles",
+      "reason": "Target page not found: ../../governance/principles/"
+    }
+  ],
+  "broken_images": [],
+  "broken_anchors": [],
+  "validation_details": [
+    {
+      "file": "index.html",
+      "links_checked": 30,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "getting-started\\index.html",
+      "links_checked": 28,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "../governance/audit-logging/#audit-event-fields",
+          "text": "Audit logging fields",
+          "reason": "Target page not found: ../governance/audit-logging/"
+        }
+      ]
+    },
+    {
+      "file": "library\\index.html",
+      "links_checked": 36,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "techdes-conops/",
+          "text": "View EVA Book \u2192",
+          "reason": "Target page not found: techdes-conops/"
+        }
+      ]
+    },
+    {
+      "file": "MIGRATION\\index.html",
+      "links_checked": 83,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "../fr/under-construction.md",
+          "text": "docs/fr/under-construction.md",
+          "reason": "Target page not found: ../fr/under-construction.md"
+        }
+      ]
+    },
+    {
+      "file": "ui\\chat-upload\\index.html",
+      "links_checked": 35,
+      "images_checked": 10,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "ui\\content-management\\index.html",
+      "links_checked": 30,
+      "images_checked": 7,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "ops\\runbook\\index.html",
+      "links_checked": 25,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "library\\techdes-conops\\index.html",
+      "links_checked": 61,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/00_source_summary/",
+          "text": "00. Source Summary",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/00_source_summary/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/01_scope_and_context/",
+          "text": "01. Scope and Context",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/01_scope_and_context/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/02_architecture_principles/",
+          "text": "02. Architecture Principles",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/02_architecture_principles/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/03_eva_chat_requirements/",
+          "text": "03. EVA Chat Requirements",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/03_eva_chat_requirements/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/04_eva_da_requirements/",
+          "text": "04. EVA Data Assistant Requirements",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/04_eva_da_requirements/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/05_security_audit_ops/",
+          "text": "05. Security, Audit & Operations",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/05_security_audit_ops/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/06_testing_prioritization/",
+          "text": "06. Testing & Prioritization",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/06_testing_prioritization/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/copilot-system/",
+          "text": "Copilot System Instructions",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/copilot-system/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/COPILOT_GUARDRAILS/",
+          "text": "Copilot Guardrails",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/COPILOT_GUARDRAILS/"
+        },
+        {
+          "type": "link",
+          "url": "../../assets/reference-docs/techdes-conops-v02/AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf",
+          "text": "AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf",
+          "reason": "Target page not found: ../../assets/reference-docs/techdes-conops-v02/AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf"
+        },
+        {
+          "type": "link",
+          "url": "../../architecture/overview/",
+          "text": "Architecture Overview",
+          "reason": "Target page not found: ../../architecture/overview/"
+        },
+        {
+          "type": "link",
+          "url": "../../deployment/azure/",
+          "text": "Deployment Guide",
+          "reason": "Target page not found: ../../deployment/azure/"
+        },
+        {
+          "type": "link",
+          "url": "../../governance/principles/",
+          "text": "Governance Principles",
+          "reason": "Target page not found: ../../governance/principles/"
+        },
+        {
+          "type": "link",
+          "url": "../../ops/runbook/",
+          "text": "Operations Runbook",
+          "reason": "Target page not found: ../../ops/runbook/"
+        }
+      ]
+    },
+    {
+      "file": "governance\\audit-logging\\index.html",
+      "links_checked": 25,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "governance\\principles\\index.html",
+      "links_checked": 27,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "../audit-logging/",
+          "text": "Audit Logging",
+          "reason": "Target page not found: ../audit-logging/"
+        }
+      ]
+    },
+    {
+      "file": "governance\\transparency\\index.html",
+      "links_checked": 29,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "fr\\under-construction\\index.html",
+      "links_checked": 20,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "features\\math-data\\index.html",
+      "links_checked": 32,
+      "images_checked": 7,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "features\\work-web\\index.html",
+      "links_checked": 27,
+      "images_checked": 4,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "development\\codespaces\\index.html",
+      "links_checked": 31,
+      "images_checked": 8,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "development\\local\\index.html",
+      "links_checked": 29,
+      "images_checked": 6,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "deployment\\auth\\index.html",
+      "links_checked": 26,
+      "images_checked": 3,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "deployment\\azure\\index.html",
+      "links_checked": 28,
+      "images_checked": 5,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "debugging\\debug-guide\\index.html",
+      "links_checked": 33,
+      "images_checked": 10,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\diagrams\\index.html",
+      "links_checked": 43,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\00_source_summary\\index.html",
+      "links_checked": 23,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\01_scope_and_context\\index.html",
+      "links_checked": 28,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\02_architecture_principles\\index.html",
+      "links_checked": 29,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\03_eva_chat_requirements\\index.html",
+      "links_checked": 62,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\04_eva_da_requirements\\index.html",
+      "links_checked": 54,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\05_security_audit_ops\\index.html",
+      "links_checked": 36,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\06_testing_prioritization\\index.html",
+      "links_checked": 31,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\copilot-system\\index.html",
+      "links_checked": 31,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\reference-docs\\techdes-conops-v02\\COPILOT_GUARDRAILS\\index.html",
+      "links_checked": 29,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "assets\\diagrams\\IMPLEMENTATION-SUMMARY\\index.html",
+      "links_checked": 37,
+      "images_checked": 0,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "architecture\\data-flow\\index.html",
+      "links_checked": 40,
+      "images_checked": 10,
+      "anchors_checked": 0,
+      "issues": []
+    },
+    {
+      "file": "architecture\\overview\\index.html",
+      "links_checked": 42,
+      "images_checked": 5,
+      "anchors_checked": 0,
+      "issues": [
+        {
+          "type": "link",
+          "url": "../data-flow/",
+          "text": "Data Flow",
+          "reason": "Target page not found: ../data-flow/"
+        },
+        {
+          "type": "link",
+          "url": "../../governance/principles/",
+          "text": "Governance Principles",
+          "reason": "Target page not found: ../../governance/principles/"
+        }
+      ]
+    }
+  ]
+}

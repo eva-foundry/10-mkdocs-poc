@@ -1,0 +1,75 @@
+# PNG Placeholder - eva-architecture.png
+
+This is a placeholder for the PNG fallback version of eva-architecture.svg.
+
+## How to Generate
+
+To create the actual PNG file from the SVG source:
+
+### Option 1: Using draw.io (diagrams.net)
+1. Open https://app.diagrams.net/
+2. File > Import From > SVG
+3. Select `../svg/eva-architecture.svg`
+4. File > Export As > PNG
+5. Settings:
+   - Width: 1600px (2x for retina displays)
+   - DPI: 150
+   - Transparent background: No
+   - Border width: 10px
+6. Save as `eva-architecture.png` in this directory
+
+### Option 2: Using Inkscape (Command Line)
+```bash
+inkscape --export-type=png --export-width=1600 --export-dpi=150 eva-architecture.svg -o eva-architecture.png
+```
+
+### Option 3: Using ImageMagick (Command Line)
+```bash
+convert -density 150 -background white eva-architecture.svg eva-architecture.png
+```
+
+### Option 4: Using Browser (Simple Method)
+1. Open `../svg/eva-architecture.svg` in a modern browser (Chrome, Firefox, Edge)
+2. Right-click on the SVG
+3. "Save Image As..." or "Take Screenshot"
+4. Save as PNG with dimensions ~1600px width
+
+## Why Not Include Binary?
+
+Binary PNG files are not included in the initial project scaffolding to:
+- Avoid Git bloat during development
+- Allow flexibility in PNG generation settings
+- Ensure SVG remains the authoritative source
+- Support automated build pipelines that generate PNGs from SVGs
+
+## When to Create the Real PNG
+
+Create the actual PNG file when:
+- Testing SharePoint Online hosting (PNG required)
+- Deploying to production documentation
+- Sharing with stakeholders who cannot render SVG
+- Including in email communications or presentations
+
+## File Size Guidelines
+
+Target PNG specifications:
+- **Width**: 1600px (web retina) or 800px (standard web)
+- **DPI**: 150 (web) or 300 (print quality)
+- **File size**: < 500KB (optimize if larger)
+- **Format**: PNG-24 (true color with alpha) or PNG-8 (256 colors, smaller file size)
+
+## Automation (Future)
+
+Consider adding to build pipeline:
+```bash
+# In mkdocs build script or CI/CD pipeline
+for svg in docs/assets/diagrams/svg/*.svg; do
+    filename=$(basename "$svg" .svg)
+    convert -density 150 -background white "$svg" "docs/assets/diagrams/png/${filename}.png"
+done
+```
+
+---
+
+**Last Updated**: January 24, 2026  
+**Status**: Placeholder - Generate real PNG before SharePoint Online deployment

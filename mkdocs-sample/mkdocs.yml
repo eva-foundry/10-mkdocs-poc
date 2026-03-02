@@ -1,0 +1,77 @@
+site_name: "EVA Docs Sample"
+site_description: "MkDocs sample with GC Design System for SharePoint Online + Azure Static Website tests"
+site_url: "https://localhost/"  # Set to root for proper relative link generation
+use_directory_urls: true  # Generate /page/ structure with proper ../ prefixes
+
+docs_dir: docs
+site_dir: site
+
+# GC Design System Custom Theme
+theme:
+  name: readthedocs  # Use readthedocs base theme for template inheritance
+  custom_dir: gcds-theme  # GCDS custom theme overrides base templates
+  language: en
+
+# Extra CSS - Canada.ca alert styling
+extra_css:
+  - stylesheets/gcds-alerts.css
+
+# Extra JavaScript - Collapsible admonitions
+extra_javascript:
+  - javascripts/gcds-collapsible.js
+
+# GC Design System Configuration
+extra:
+  # Bilingual toggle - French construction page
+  gcds_lang_href: "/fr/under-construction.html"
+  
+  # GCDS Footer configuration
+  gcds_footer_heading: "EVA Documentation / Documentation EVA"
+  gcds_footer_links: '{"About EVA": "/", "Contact": "mailto:eva-support@example.gc.ca"}'
+  
+  # Show search in header (requires backend integration)
+  gcds_show_search: false
+  
+  # Default date modified (can be overridden per page)
+  date_modified: "2026-01-24"
+
+# Markdown Extensions (unchanged)
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - admonition
+  - pymdownx.details  # For collapsible admonitions
+  - pymdownx.superfences  # Enhanced code blocks
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Data Flow: architecture/data-flow.md
+  - UI Gallery:
+      - Chat & Upload: ui/chat-upload.md
+      - Content Management: ui/content-management.md
+  - Features:
+      - Math & Data Assist: features/math-data.md
+      - Work+Web Integration: features/work-web.md
+  - Deployment:
+      - Azure Resources: deployment/azure.md
+      - Authentication: deployment/auth.md
+  - Development:
+      - Codespaces: development/codespaces.md
+      - Local Setup: development/local.md
+  - Debugging:
+      - Debug Guide: debugging/debug-guide.md
+  - Governance:
+      - Principles: governance/principles.md
+      - Audit Logging: governance/audit-logging.md
+      - Transparency: governance/transparency.md
+  - EVA Library:
+      - Library Home: library/index.md
+      - 'EVA Book: Tech Design & ConOps v0.2': library/techdes-conops.md
+  - Operations:
+      - Runbook: ops/runbook.md

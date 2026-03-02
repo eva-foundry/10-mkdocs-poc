@@ -1,0 +1,45 @@
+# MkDocs build output
+site/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+
+# Node
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Evidence and debug outputs
+evidence/test-results/*.json
+debug/screenshots/*.png
+debug/html/*.html
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Temp files
+*.tmp
+*.bak

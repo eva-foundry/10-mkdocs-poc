@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block header %}
+<gcds-header 
+  lang="{{ config.theme.language | default('en') }}"
+  lang-href="{{ config.extra.gcds_lang_href | default('/fr/under-construction.html') }}"
+  skip-to-href="#main-content"
+  signature-variant="colour"
+  signature-has-link="true">
+  
+  {% if config.extra.gcds_show_search %}
+  <gcds-search slot="search"></gcds-search>
+  {% endif %}
+  
+  {% if page and page.ancestors %}
+  <gcds-breadcrumbs slot="breadcrumb">
+    <gcds-breadcrumbs-item href="{{ config.site_url | default('/') }}">Home</gcds-breadcrumbs-item>
+    {% for ancestor in page.ancestors %}
+    <gcds-breadcrumbs-item href="{{ ancestor.url }}">{{ ancestor.title }}</gcds-breadcrumbs-item>
+    {% endfor %}
+  </gcds-breadcrumbs>
+  {% endif %}
+</gcds-header>
+{% endblock %}
+
+{% block content %}
+<gcds-container id="main-content" main-container size="xl" centered tag="main">
+  
+  {% if page.title %}
+  <section class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.meta and page.meta.description %}
+    <p class="page-description">{{ page.meta.description }}</p>
+    {% endif %}
+  </section>
+  {% endif %}
+  
+  {% if nav %}
+  <aside class="navigation-sidebar">
+    {% include "partials/nav.html" %}
+  </aside>
+  {% endif %}
+  
+  <article class="content">
+    {{ page.content }}
+  </article>
+  
+  {% if page.toc %}
+  <aside class="toc-sidebar">
+    {% include "partials/toc.html" %}
+  </aside>
+  {% endif %}
+  
+  {% if page.meta and page.meta.date_modified %}
+  <gcds-date-modified>{{ page.meta.date_modified }}</gcds-date-modified>
+  {% elif config.extra.date_modified %}
+  <gcds-date-modified>{{ config.extra.date_modified }}</gcds-date-modified>
+  {% endif %}
+  
+</gcds-container>
+{% endblock %}
+
+{% block footer %}
+<gcds-footer 
+  display="full"
+  lang="{{ config.theme.language | default('en') }}"
+  {% if config.extra.gcds_footer_heading %}
+  contextual-heading="{{ config.extra.gcds_footer_heading }}"
+  {% endif %}
+  {% if config.extra.gcds_footer_links %}
+  contextual-links='{{ config.extra.gcds_footer_links | tojson }}'
+  {% endif %}>
+</gcds-footer>
+{% endblock %}

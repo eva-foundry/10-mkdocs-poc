@@ -1,0 +1,31 @@
+<!-- Navigation Sidebar Partial -->
+{% if nav %}
+<nav class="gcds-nav" aria-label="Site navigation">
+  <ul class="nav-list">
+    {% for nav_item in nav %}
+    <li class="nav-item{% if nav_item.active %} active{% endif %}">
+      {% if nav_item.children %}
+      <details{% if nav_item.active %} open{% endif %}>
+        <summary class="nav-section-title">
+          {% if nav_item.url %}
+          <a href="{{ nav_item.url }}" class="nav-link">{{ nav_item.title }}</a>
+          {% else %}
+          <span>{{ nav_item.title }}</span>
+          {% endif %}
+        </summary>
+        <ul class="nav-sublist">
+          {% for child in nav_item.children %}
+          <li class="nav-subitem{% if child.active %} active{% endif %}">
+            <a href="{{ child.url }}" class="nav-link">{{ child.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% else %}
+      <a href="{{ nav_item.url }}" class="nav-link">{{ nav_item.title }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

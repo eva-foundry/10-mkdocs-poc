@@ -1,0 +1,34 @@
+﻿# EVA-FEATURE: F10-02
+# EVA-STORY: F10-02-001
+# EVA-STORY: F10-02-002
+# EVA-STORY: F10-03-001
+# EVA-STORY: F10-03-002
+# EVA-STORY: F10-03-003
+# EVA-STORY: F10-05-001
+# EVA-STORY: F10-05-002
+# EVA-STORY: F10-05-003
+# EVA-STORY: F10-06-001
+# EVA-STORY: F10-06-002
+# EVA-STORY: F10-07-003
+# EVA-STORY: F10-07-004
+# EVA-STORY: F10-07-005
+# EVA-STORY: F10-07-006
+# EVA-STORY: F10-07-007
+# EVA-STORY: F10-07-008
+# EVA-STORY: F10-07-009
+# EVA-STORY: F10-07-010
+# EVA-STORY: F10-08-001
+# EVA-STORY: F10-08-002
+# EVA-STORY: F10-08-003
+# EVA-STORY: F10-08-004
+# EVA-STORY: F10-10-001
+# EVA-STORY: F10-10-002
+"""
+MkDocs PoC - Components Package
+================================
+Professional component architecture for MkDocs PoC.
+"""
+
+__version__ = "1.0.0"
+__author__ = "Marco Presta"
+__description__ = "MkDocs PoC Professional Components"

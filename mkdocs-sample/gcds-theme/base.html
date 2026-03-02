@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ config.theme.language | default('en') }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  {% block htmltitle %}
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  {% endblock %}
+  
+  {% block meta %}
+  <meta name="description" content="{{ config.site_description | default('') }}" />
+  {% if page and page.meta and page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}" />
+  {% endif %}
+  {% endblock %}
+  
+  {% block styles %}
+  <link rel="stylesheet" href="{{ base_url }}/assets/gcds/gcds.css" />
+  {% for path in config.extra_css %}
+  <link rel="stylesheet" href="{{ path }}" />
+  {% endfor %}
+  {% endblock %}
+  
+  {% block libs %}
+  <script type="module" src="{{ base_url }}/assets/gcds/gcds.esm.js"></script>
+  {% endblock %}
+  
+  {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+  {% block header %}{% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}
+  
+  {% block scripts %}
+  {% for path in config.extra_javascript %}
+  <script src="{{ path }}"></script>
+  {% endfor %}
+  {% endblock %}
+</body>
+</html>

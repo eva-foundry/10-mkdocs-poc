@@ -1,0 +1,22 @@
+<!-- Table of Contents Partial -->
+{% if page.toc %}
+<nav class="gcds-toc" aria-label="Table of contents">
+  <h2 class="toc-title">On this page</h2>
+  <ul class="toc-list">
+    {% for toc_item in page.toc %}
+    <li class="toc-item">
+      <a href="{{ toc_item.url }}" class="toc-link">{{ toc_item.title }}</a>
+      {% if toc_item.children %}
+      <ul class="toc-sublist">
+        {% for child in toc_item.children %}
+        <li class="toc-subitem">
+          <a href="{{ child.url }}" class="toc-link">{{ child.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

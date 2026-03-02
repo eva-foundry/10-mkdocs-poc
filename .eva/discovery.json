@@ -1,0 +1,2679 @@
+{
+  "meta": {
+    "schema": "eva.discovery.v2",
+    "generated_at": "2026-02-25T06:37:03.578Z",
+    "repo": "C:\\AICOE\\eva-foundation\\10-mkdocs-poc"
+  },
+  "project": null,
+  "planned": {
+    "epic": {
+      "title": "Project 10: MkDocs Proof of Concept",
+      "source": "README.md"
+    },
+    "features": [
+      {
+        "id": "F10-01",
+        "title": "Executive Summary",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-02",
+        "title": "Goals",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-03",
+        "title": "Quick Start (Zero-Setup Execution)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-04",
+        "title": "Project Structure",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-05",
+        "title": "MkDocs Sample Content",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-06",
+        "title": "Hosting Test Strategy",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07",
+        "title": "Validation Checklist",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08",
+        "title": "Success Criteria",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-09",
+        "title": "Technology Stack",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-10",
+        "title": "Key Findings (To Be Updated Post-Testing)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-11",
+        "title": "References",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-12",
+        "title": "Maintainers",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-13",
+        "title": "Change Log",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "stories": [
+      {
+        "id": "F10-02-001",
+        "title": "Primary Objectives",
+        "feature_id": "F10-02",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-02-002",
+        "title": "Secondary Objectives",
+        "feature_id": "F10-02",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-03-001",
+        "title": "Prerequisites",
+        "feature_id": "F10-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-03-002",
+        "title": "Run the PoC",
+        "feature_id": "F10-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-03-003",
+        "title": "Manual Execution (for development)",
+        "feature_id": "F10-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-05-001",
+        "title": "Asset Integration (98+ Files from EVA-JP-reference-0113)",
+        "feature_id": "F10-05",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-05-002",
+        "title": "Content Validation Points",
+        "feature_id": "F10-05",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-05-003",
+        "title": "Example Pages",
+        "feature_id": "F10-05",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-06-001",
+        "title": "Test 1: SharePoint Online Document Library",
+        "feature_id": "F10-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-06-002",
+        "title": "Test 2: Azure Static Website (Baseline)",
+        "feature_id": "F10-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-001",
+        "title": "MkDocs site builds without errors (validated with `mkdocs build`)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-002",
+        "title": "Link validation script created (`mkdocs-sample/scripts/validate_links.py`)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-003",
+        "title": "Navigation sidebar renders correctly (manual browser test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-004",
+        "title": "Internal links navigate correctly (run link validator)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-005",
+        "title": "Deep links scroll to anchors (manual test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-006",
+        "title": "Tables render properly (manual test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-007",
+        "title": "Callouts/admonitions display correctly (manual test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-008",
+        "title": "Code blocks have syntax highlighting (manual test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-009",
+        "title": "CSS/JS assets load without 404s (check browser DevTools)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-07-010",
+        "title": "Mobile responsive design works (manual test required)",
+        "feature_id": "F10-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001",
+        "title": "Phase 1: Generation ? **COMPLETE**",
+        "feature_id": "F10-08",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002",
+        "title": "Phase 2: SharePoint Online Testing ? **READY TO START**",
+        "feature_id": "F10-08",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-003",
+        "title": "Phase 3: Azure Static Website Testing ? **READY TO START**",
+        "feature_id": "F10-08",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-004",
+        "title": "Phase 4: Analysis & Recommendation ? **BLOCKED** (Requires Phase 2 & 3)",
+        "feature_id": "F10-08",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-10-001",
+        "title": "SharePoint Online",
+        "feature_id": "F10-10",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-10-002",
+        "title": "Azure Static Website",
+        "feature_id": "F10-10",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "F10-08-001-T01",
+        "title": "MkDocs sample site generates successfully",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001-T02",
+        "title": "All content validation points implemented (19 pages, 103 assets)",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001-T03",
+        "title": "Professional runner with zero-setup execution",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001-T04",
+        "title": "Evidence collection infrastructure operational",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001-T05",
+        "title": "Link validation script created (Python stdlib + BeautifulSoup)",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-001-T06",
+        "title": "Deployment guide documented",
+        "story_id": "F10-08-001",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002-T01",
+        "title": "Upload site to SPO document library (see DEPLOYMENT-GUIDE.md)",
+        "story_id": "F10-08-002",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002-T02",
+        "title": "Document rendering behavior (render vs download)",
+        "story_id": "F10-08-002",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002-T03",
+        "title": "Validate asset loading (browser DevTools)",
+        "story_id": "F10-08-002",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002-T04",
+        "title": "Test deep links and navigation",
+        "story_id": "F10-08-002",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-002-T05",
+        "title": "Generate detailed test report (evidence/test-results/)",
+        "story_id": "F10-08-002",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-003-T01",
+        "title": "Deploy to Azure Storage Static Website (see DEPLOYMENT-GUIDE.md)",
+        "story_id": "F10-08-003",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-003-T02",
+        "title": "Validate baseline functionality",
+        "story_id": "F10-08-003",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-003-T03",
+        "title": "Performance baseline established (DevTools Performance tab)",
+        "story_id": "F10-08-003",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-003-T04",
+        "title": "Generate detailed test report (evidence/test-results/)",
+        "story_id": "F10-08-003",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-004-T01",
+        "title": "Compare SPO vs Azure hosting results",
+        "story_id": "F10-08-004",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-004-T02",
+        "title": "Document pros/cons of each approach",
+        "story_id": "F10-08-004",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-004-T03",
+        "title": "Recommend hosting strategy for EVA docs",
+        "story_id": "F10-08-004",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F10-08-004-T04",
+        "title": "Update README with final recommendation",
+        "story_id": "F10-08-004",
+        "feature_id": "F10-08",
+        "done": false,
+        "source": "veritas-plan.json"
+      }
+    ],
+    "acceptance": [],
+    "declared_status": {}
+  },
+  "actual": {
+    "artifacts": [
+      {
+        "path": ".gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "ASSET-VALIDATION-REPORT.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "copy-eva-assets.bat",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "DEPLOYMENT-GUIDE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "IMPLEMENTATION-COMPLETE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "IMPLEMENTATION-STATUS.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "PLAN.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "QUICK-REFERENCE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "requirements-core.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "requirements-test.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "run_mkdocs_poc.bat",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "VALIDATION-CHECKLIST.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/README.md",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/VALIDATION-FINDINGS.md",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/.gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/copy-gcds-assets.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/mkdocs.yml",
+        "type": "config",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/package.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/requirements.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "output/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/build_mkdocs.py",
+        "type": "code",
+        "story_tags": [
+          "F10-07-001"
+        ]
+      },
+      {
+        "path": "scripts/test_hosting.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": ".github/copilot-skills/00-skill-index.skill.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_122728.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123058.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123144.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123214.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123300.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123305.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123326.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "evidence/test-results/link_validation_20260124_123807.json",
+        "type": "evidence",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/getting-started.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/index.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/MIGRATION.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/gcds-theme/base.html",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/gcds-theme/main.html",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/scripts/quick_validation.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/scripts/validate_gcds_theme.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/scripts/validate_links.py",
+        "type": "code",
+        "story_tags": [
+          "F10-07-002"
+        ]
+      },
+      {
+        "path": "scripts/components/evidence_collector.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/components/mkdocs_generator.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/components/validation_reporter.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "scripts/components/__init__.py",
+        "type": "code",
+        "story_tags": [
+          "F10-02-001",
+          "F10-02-002",
+          "F10-03-001",
+          "F10-03-002",
+          "F10-03-003",
+          "F10-05-001",
+          "F10-05-002",
+          "F10-05-003",
+          "F10-06-001",
+          "F10-06-002",
+          "F10-07-003",
+          "F10-07-004",
+          "F10-07-005",
+          "F10-07-006",
+          "F10-07-007",
+          "F10-07-008",
+          "F10-07-009",
+          "F10-07-010",
+          "F10-08-001",
+          "F10-08-002",
+          "F10-08-003",
+          "F10-08-004",
+          "F10-10-001",
+          "F10-10-002"
+        ]
+      },
+      {
+        "path": "docs/assets/diagrams/IMPLEMENTATION-SUMMARY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/diagrams/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/branding/github.svg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/branding/openai.svg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/branding/search.svg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/adjust-settings-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/appcomponents.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/app_registration.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/ask-a-question-interface.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/authentication_identity_provider_identification.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/authentication_managed_application.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/chat-interface.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/codespaces_building_container.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/codespaces_open_in_vs_code_desktop.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/codespace_creation.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/configure-answer-generation.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/cosmos_account.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/credential-lifespan.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/custom_language_file.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/data_explorer.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/deployment_app_service_location.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/deployment_default_domain.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/developing_in_a_codespaces_image_1.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/developing_in_a_codespaces_image_2.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_2.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_3.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_4.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/fastapi_debug.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/fork_repo.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/frontend-watch.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/function_attach.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/function_running.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/generative-ungrounded-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/info-assist-chat-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/info_assistant_chatscreen.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/known_Issues_web_app_authentication.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-delete.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-interface.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-upload-files-1.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-upload-files.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/manage-content-upload-status.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/math-assistant-give-me-clues.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/math-assistant-show-me-how-to-solve.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/math-assistant-show-me-the-answer.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/math-assistant-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/python_version.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/sandbox_environment_build_pipeline_configuration.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-detail-architecture.drawio",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-detail-architecture.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-frontend-architecture.drawio",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-frontend-architecture.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-function-architecture.drawio",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-function-architecture.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-high-level-architecture.drawio",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-high-level-architecture.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/secure-deploy-network-architecture.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/sharepoint-preview-designer-known-issue.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/sharepoint_logic_app_diagram.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/tab-data-assist-how-many-rows.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/tab-data-assist-how-many.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/tab-data-assist-upload-files-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/upload-files-drag-drop.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/upload-files-link.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/upload-status-delete.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/UX_analysispanel_supportingcontent.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/UX_analysispanel_thoughtprocess.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/UX_anlysispanel_citation_document.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/UX_anlysispanel_citation_documentsection.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/VectorSearch.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/view-upload-status-link.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/view-upload-status-options-and-refresh.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/virtual_env.jpg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/vite-debug.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/vscode_reopen_in_container.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/vscode_starting_dev_container.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/vscode_terminal_windows.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/webapp-backend.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/webapp_debug_1.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/webapp_debug_2.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/webapp_debug_3.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/work-plus-web-compare-with-web.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/work-plus-web-compare-with-work.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/work-plus-web-search-web.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/docs-images/work-plus-web-ui.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/Information Assistant - Architecture Document v1.0.pdf",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/process_flow_agent.drawio.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/process_flow_agent.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/process_flow_chat.drawio.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/process_flow_chat.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/root-docs/work-plus-web-search-web.png",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/architecture/data-flow.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/architecture/overview.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/debugging/debug-guide.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/deployment/auth.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/deployment/azure.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/development/codespaces.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/development/local.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/features/math-data.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/features/work-web.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/fr/under-construction.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/governance/audit-logging.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/governance/principles.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/governance/transparency.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/javascripts/gcds-collapsible.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/library/index.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/library/techdes-conops.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/ops/runbook.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/stylesheets/gcds-alerts.css",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/ui/chat-upload.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/ui/content-management.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/gcds-theme/partials/nav.html",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/gcds-theme/partials/toc.html",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/diagrams/png/eva-architecture.png.txt",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "docs/assets/diagrams/svg/eva-architecture.svg",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/branding/github.svg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/branding/openai.svg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/branding/search.svg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/diagrams/IMPLEMENTATION-SUMMARY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/diagrams/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/gcds-fieldset.entry.esm.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/gcds-topic-menu.entry.esm.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/gcds.css",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/gcds.esm.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/gcds.esm.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/index.esm.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/index.esm.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/loader.esm.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-1d3b1e1c.entry.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-1d3b1e1c.entry.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-4e360b30.entry.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-4e360b30.entry.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-BKOkUsrw.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-BKOkUsrw.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-BMZbJN0q.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-BMZbJN0q.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-f8104b95.entry.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/gcds/p-f8104b95.entry.js.map",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/adjust-settings-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/appcomponents.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/app_registration.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/ask-a-question-interface.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/authentication_identity_provider_identification.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/authentication_managed_application.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/chat-interface.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/codespaces_building_container.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/codespaces_open_in_vs_code_desktop.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/codespace_creation.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/configure-answer-generation.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/cosmos_account.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/credential-lifespan.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/custom_language_file.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/data_explorer.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/deployment_app_service_location.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/deployment_default_domain.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/developing_in_a_codespaces_image_1.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/developing_in_a_codespaces_image_2.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_2.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_3.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/developing_in_a_codespaces_open_in_vscode_4.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/fastapi_debug.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/fork_repo.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/frontend-watch.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/function_attach.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/function_running.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/generative-ungrounded-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/info-assist-chat-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/info_assistant_chatscreen.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/known_Issues_web_app_authentication.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-delete.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-interface.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-upload-files-1.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-upload-files.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/manage-content-upload-status.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/math-assistant-give-me-clues.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/math-assistant-show-me-how-to-solve.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/math-assistant-show-me-the-answer.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/math-assistant-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/python_version.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/sandbox_environment_build_pipeline_configuration.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-detail-architecture.drawio",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-detail-architecture.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-frontend-architecture.drawio",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-frontend-architecture.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-function-architecture.drawio",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-function-architecture.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-high-level-architecture.drawio",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-high-level-architecture.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/secure-deploy-network-architecture.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/sharepoint-preview-designer-known-issue.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/sharepoint_logic_app_diagram.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/tab-data-assist-how-many-rows.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/tab-data-assist-how-many.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/tab-data-assist-upload-files-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/upload-files-drag-drop.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/upload-files-link.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/upload-status-delete.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/UX_analysispanel_supportingcontent.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/UX_analysispanel_thoughtprocess.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/UX_anlysispanel_citation_document.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/UX_anlysispanel_citation_documentsection.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/VectorSearch.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/view-upload-status-link.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/view-upload-status-options-and-refresh.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/virtual_env.jpg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/vite-debug.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/vscode_reopen_in_container.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/vscode_starting_dev_container.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/vscode_terminal_windows.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/webapp-backend.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/webapp_debug_1.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/webapp_debug_2.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/webapp_debug_3.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/work-plus-web-compare-with-web.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/work-plus-web-compare-with-work.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/work-plus-web-search-web.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/docs-images/work-plus-web-ui.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/Information Assistant - Architecture Document v1.0.pdf",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/process_flow_agent.drawio.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/process_flow_agent.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/process_flow_chat.drawio.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/process_flow_chat.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/root-docs/work-plus-web-search-web.png",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/diagrams/png/eva-architecture.png.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/diagrams/svg/eva-architecture.svg",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/00_source_summary.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/01_scope_and_context.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/02_architecture_principles.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/03_eva_chat_requirements.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/04_eva_da_requirements.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/05_security_audit_ops.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/06_testing_prioritization.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/AICoE_PROJ_EVAFoundation_TechDesConOps_v.02.pdf",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/copilot-system.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "mkdocs-sample/docs/assets/reference-docs/techdes-conops-v02/COPILOT_GUARDRAILS.md",
+        "type": "doc",
+        "story_tags": []
+      }
+    ],
+    "story_artifact_map": {
+      "F10-07-001": {
+        "artifacts": [
+          {
+            "path": "scripts/build_mkdocs.py",
+            "type": "code",
+            "story_tags": [
+              "F10-07-001"
+            ]
+          }
+        ]
+      },
+      "F10-07-002": {
+        "artifacts": [
+          {
+            "path": "mkdocs-sample/scripts/validate_links.py",
+            "type": "code",
+            "story_tags": [
+              "F10-07-002"
+            ]
+          }
+        ]
+      },
+      "F10-02-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-02-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-03-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-03-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-03-003": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-05-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-05-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-05-003": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-06-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-06-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-003": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-004": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-005": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-006": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-007": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-008": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-009": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-07-010": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-08-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-08-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-08-003": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-08-004": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-10-001": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      },
+      "F10-10-002": {
+        "artifacts": [
+          {
+            "path": "scripts/components/__init__.py",
+            "type": "code",
+            "story_tags": [
+              "F10-02-001",
+              "F10-02-002",
+              "F10-03-001",
+              "F10-03-002",
+              "F10-03-003",
+              "F10-05-001",
+              "F10-05-002",
+              "F10-05-003",
+              "F10-06-001",
+              "F10-06-002",
+              "F10-07-003",
+              "F10-07-004",
+              "F10-07-005",
+              "F10-07-006",
+              "F10-07-007",
+              "F10-07-008",
+              "F10-07-009",
+              "F10-07-010",
+              "F10-08-001",
+              "F10-08-002",
+              "F10-08-003",
+              "F10-08-004",
+              "F10-10-001",
+              "F10-10-002"
+            ]
+          }
+        ]
+      }
+    },
+    "commit_evidence_map": {}
+  }
+}
