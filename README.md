@@ -1,5 +1,26 @@
 # Project 10: MkDocs Proof of Concept
 
+<!-- eva-primed -->
+<!-- foundation-primer: 2026-03-03 by agent:copilot -->
+
+## EVA Ecosystem Integration
+
+| Tool | Purpose | How to Use |
+|------|---------|------------|
+| 37-data-model | Single source of truth for all project entities | GET http://localhost:8010/model/projects/10-mkdocs-poc |
+| 29-foundry | Agentic capabilities (search, RAG, eval, observability) | C:\eva-foundry\eva-foundation\29-foundry |
+| 48-eva-veritas | Trust score and coverage audit | MCP tool: audit_repo / get_trust_score |
+| 07-foundation-layer | Copilot instructions primer + governance templates | MCP tool: apply_primer / audit_project |
+
+**Agent rule**: Query the data model API before reading source files.
+```powershell
+Invoke-RestMethod "http://localhost:8010/model/agent-guide"   # complete protocol
+Invoke-RestMethod "http://localhost:8010/model/agent-summary" # all layer counts
+```
+
+---
+
+
 **Project Status**: Active - Implementation Phase  
 **Start Date**: January 24, 2026  
 **Owner**: Marco Presta  
@@ -20,18 +41,18 @@ This project validates MkDocs as a static site generator for EVA documentation w
 ## Goals
 
 ### Primary Objectives
-1. ✅ Generate professional MkDocs site with **real EVA production assets** (103 assets: 93 visual + 10 library docs)
-2. ⏳ Test SharePoint Online static HTML rendering capabilities
-3. ⏳ Validate Azure Static Website hosting (baseline)
-4. ⏳ Document findings and recommend hosting strategy
+1. ? Generate professional MkDocs site with **real EVA production assets** (103 assets: 93 visual + 10 library docs)
+2. ? Test SharePoint Online static HTML rendering capabilities
+3. ? Validate Azure Static Website hosting (baseline)
+4. ? Document findings and recommend hosting strategy
 
 ### Secondary Objectives
-5. ✅ Establish MkDocs best practices for EVA ecosystem
-6. ✅ Create reusable MkDocs templates for future projects
-7. ⏳ Test deep linking, navigation, and asset loading across platforms
-8. ✅ Demonstrate visual evidence-based documentation approach
+5. ? Establish MkDocs best practices for EVA ecosystem
+6. ? Create reusable MkDocs templates for future projects
+7. ? Test deep linking, navigation, and asset loading across platforms
+8. ? Demonstrate visual evidence-based documentation approach
 
-**Legend**: ✅ Complete | ⏳ In Progress | ❌ Blocked
+**Legend**: ? Complete | ? In Progress | ? Blocked
 
 ---
 
@@ -67,52 +88,52 @@ python scripts\build_mkdocs.py
 
 ```
 10-MkDocs-PoC/
-├── README.md                          # This file
-├── .github/
-│   └── copilot-instructions.md        # Copilot configuration
-├── scripts/
-│   ├── build_mkdocs.py                # Main builder (professional runner)
-│   ├── test_hosting.py                # Hosting validation tests
-│   └── components/
-│       ├── __init__.py
-│       ├── mkdocs_generator.py        # MkDocs site generator
-│       ├── evidence_collector.py      # Debug artifact collection
-│       └── validation_reporter.py     # Test report generation
-├── mkdocs-sample/                     # Generated MkDocs site
-│   ├── mkdocs.yml                     # MkDocs configuration
-│   ├── docs/                          # Source Markdown files
-│   │   ├── index.md
-│   │   ├── getting-started.md
-│   │   ├── architecture/
-│   │   │   ├── overview.md
-│   │   │   └── data-flow.md
-│   │   ├── governance/
-│   │   │   ├── principles.md
-│   │   │   └── audit-logging.md
-│   │   ├── ops/
-│   │   │   └── runbook.md
-│   │   └── assets/                    # **98+ REAL EVA production assets**
-│   │       ├── branding/              # SVG logos, favicon (4 files)
-│   │       ├── docs-images/           # Screenshots, diagrams (80+ files)
-│   │       ├── root-docs/             # Process flows, PDFs (10+ files)
-│   │       └── diagrams/              # Diagram standards (SVG/PNG)
-│   └── site/                          # Generated static HTML (after build)
-├── debug/                             # Debug artifacts (MANDATORY)
-│   ├── screenshots/                   # UI operation captures
-│   ├── html/                          # Page state captures
-│   └── traces/                        # Network/API traces
-├── evidence/                          # Test evidence (MANDATORY)
-│   └── test-results/
-│       ├── spo-test-{timestamp}.json
-│       └── azure-test-{timestamp}.json
-├── logs/                              # Execution logs (MANDATORY)
-├── sessions/                          # Session state persistence
-├── output/                            # Generated reports
-│   └── test-reports/
-├── requirements-core.txt              # Core dependencies (MkDocs)
-├── requirements-test.txt              # Testing dependencies
-├── run_mkdocs_poc.bat                 # Windows-safe execution wrapper
-└── VALIDATION-CHECKLIST.md            # Manual test validation guide
+??? README.md                          # This file
+??? .github/
+?   ??? copilot-instructions.md        # Copilot configuration
+??? scripts/
+?   ??? build_mkdocs.py                # Main builder (professional runner)
+?   ??? test_hosting.py                # Hosting validation tests
+?   ??? components/
+?       ??? __init__.py
+?       ??? mkdocs_generator.py        # MkDocs site generator
+?       ??? evidence_collector.py      # Debug artifact collection
+?       ??? validation_reporter.py     # Test report generation
+??? mkdocs-sample/                     # Generated MkDocs site
+?   ??? mkdocs.yml                     # MkDocs configuration
+?   ??? docs/                          # Source Markdown files
+?   ?   ??? index.md
+?   ?   ??? getting-started.md
+?   ?   ??? architecture/
+?   ?   ?   ??? overview.md
+?   ?   ?   ??? data-flow.md
+?   ?   ??? governance/
+?   ?   ?   ??? principles.md
+?   ?   ?   ??? audit-logging.md
+?   ?   ??? ops/
+?   ?   ?   ??? runbook.md
+?   ?   ??? assets/                    # **98+ REAL EVA production assets**
+?   ?       ??? branding/              # SVG logos, favicon (4 files)
+?   ?       ??? docs-images/           # Screenshots, diagrams (80+ files)
+?   ?       ??? root-docs/             # Process flows, PDFs (10+ files)
+?   ?       ??? diagrams/              # Diagram standards (SVG/PNG)
+?   ??? site/                          # Generated static HTML (after build)
+??? debug/                             # Debug artifacts (MANDATORY)
+?   ??? screenshots/                   # UI operation captures
+?   ??? html/                          # Page state captures
+?   ??? traces/                        # Network/API traces
+??? evidence/                          # Test evidence (MANDATORY)
+?   ??? test-results/
+?       ??? spo-test-{timestamp}.json
+?       ??? azure-test-{timestamp}.json
+??? logs/                              # Execution logs (MANDATORY)
+??? sessions/                          # Session state persistence
+??? output/                            # Generated reports
+?   ??? test-reports/
+??? requirements-core.txt              # Core dependencies (MkDocs)
+??? requirements-test.txt              # Testing dependencies
+??? run_mkdocs_poc.bat                 # Windows-safe execution wrapper
+??? VALIDATION-CHECKLIST.md            # Manual test validation guide
 ```
 
 ---
@@ -122,26 +143,26 @@ python scripts\build_mkdocs.py
 The generated sample site includes **real EVA production assets** demonstrating visual evidence-based documentation:
 
 ### Asset Integration (98+ Files from EVA-JP-reference-0113)
-- ✅ **Architecture Diagrams**: Secure deployment, process flows, vector search (10+ diagrams)
-- ✅ **UI Screenshots**: Chat interfaces, content management, upload workflows (17+ screenshots)
-- ✅ **Feature Demos**: Work+Web, Math Assistant, Data Assist, governance panels (18+ demos)
-- ✅ **Deployment Guides**: App registration, Cosmos DB, authentication configs (10+ guides)
-- ✅ **Development**: Codespaces, VS Code, Python environment setup (15+ screenshots)
-- ✅ **Debugging**: FastAPI logs, Functions, frontend watch, known issues (11+ captures)
-- ✅ **Branding**: SVG logos (GitHub, OpenAI, Azure Search), favicon
-- ✅ **Reference Docs**: Architecture PDFs, process flow diagrams
+- ? **Architecture Diagrams**: Secure deployment, process flows, vector search (10+ diagrams)
+- ? **UI Screenshots**: Chat interfaces, content management, upload workflows (17+ screenshots)
+- ? **Feature Demos**: Work+Web, Math Assistant, Data Assist, governance panels (18+ demos)
+- ? **Deployment Guides**: App registration, Cosmos DB, authentication configs (10+ guides)
+- ? **Development**: Codespaces, VS Code, Python environment setup (15+ screenshots)
+- ? **Debugging**: FastAPI logs, Functions, frontend watch, known issues (11+ captures)
+- ? **Branding**: SVG logos (GitHub, OpenAI, Azure Search), favicon
+- ? **Reference Docs**: Architecture PDFs, process flow diagrams
 
 **Source Inventory**: [eva-da-ref-assets.md](../09-EVA-Repo-documentation/eva-da-ref-assets.md) (Project 09)
 
 ### Content Validation Points
-- ✅ **Navigation**: Multi-level sidebar (Home, Getting Started, Architecture, Governance, Operations)
-- ✅ **Internal Links**: Cross-references between pages
-- ✅ **Deep Links**: Anchor links to specific sections
-- ✅ **Tables**: Structured data presentation
-- ✅ **Callouts**: Admonitions (note, warning, important, tip)
-- ✅ **Code Blocks**: Syntax-highlighted examples
-- ✅ **Images**: Asset path references
-- ✅ **Headings**: Proper hierarchy (H1-H4)
+- ? **Navigation**: Multi-level sidebar (Home, Getting Started, Architecture, Governance, Operations)
+- ? **Internal Links**: Cross-references between pages
+- ? **Deep Links**: Anchor links to specific sections
+- ? **Tables**: Structured data presentation
+- ? **Callouts**: Admonitions (note, warning, important, tip)
+- ? **Code Blocks**: Syntax-highlighted examples
+- ? **Images**: Asset path references
+- ? **Headings**: Proper hierarchy (H1-H4)
 
 ### Example Pages
 - **Home** (`index.md`) - Landing page with quick links
@@ -164,10 +185,10 @@ The generated sample site includes **real EVA production assets** demonstrating 
 1. Upload `mkdocs-sample/site/` contents to SPO document library
 2. Click `index.html` and observe behavior
 3. Validate:
-   - ❓ Does HTML render in browser or force download?
-   - ❓ Do CSS/JS assets load correctly?
-   - ❓ Do relative links work?
-   - ❓ Do deep links (anchors) work?
+   - ? Does HTML render in browser or force download?
+   - ? Do CSS/JS assets load correctly?
+   - ? Do relative links work?
+   - ? Do deep links (anchors) work?
 
 **Expected Issues**:
 - SPO may serve `.html` with incorrect MIME types
@@ -190,7 +211,7 @@ The generated sample site includes **real EVA production assets** demonstrating 
 3. Access primary endpoint URL
 4. Validate all content rendering correctly
 
-**Expected Result**: ✅ All validation points pass (this is the reliable baseline)
+**Expected Result**: ? All validation points pass (this is the reliable baseline)
 
 **Evidence Collection**:
 - Screenshots of rendered pages
@@ -221,7 +242,7 @@ See [DEPLOYMENT-GUIDE.md](./DEPLOYMENT-GUIDE.md) for complete deployment procedu
 
 ## Success Criteria
 
-### Phase 1: Generation ✅ **COMPLETE**
+### Phase 1: Generation ? **COMPLETE**
 - [x] MkDocs sample site generates successfully
 - [x] All content validation points implemented (19 pages, 103 assets)
 - [x] Professional runner with zero-setup execution
@@ -229,20 +250,20 @@ See [DEPLOYMENT-GUIDE.md](./DEPLOYMENT-GUIDE.md) for complete deployment procedu
 - [x] Link validation script created (Python stdlib + BeautifulSoup)
 - [x] Deployment guide documented
 
-### Phase 2: SharePoint Online Testing ⏳ **READY TO START**
+### Phase 2: SharePoint Online Testing ? **READY TO START**
 - [ ] Upload site to SPO document library (see DEPLOYMENT-GUIDE.md)
 - [ ] Document rendering behavior (render vs download)
 - [ ] Validate asset loading (browser DevTools)
 - [ ] Test deep links and navigation
 - [ ] Generate detailed test report (evidence/test-results/)
 
-### Phase 3: Azure Static Website Testing ⏳ **READY TO START**
+### Phase 3: Azure Static Website Testing ? **READY TO START**
 - [ ] Deploy to Azure Storage Static Website (see DEPLOYMENT-GUIDE.md)
 - [ ] Validate baseline functionality
 - [ ] Performance baseline established (DevTools Performance tab)
 - [ ] Generate detailed test report (evidence/test-results/)
 
-### Phase 4: Analysis & Recommendation ⏳ **BLOCKED** (Requires Phase 2 & 3)
+### Phase 4: Analysis & Recommendation ? **BLOCKED** (Requires Phase 2 & 3)
 - [ ] Compare SPO vs Azure hosting results
 - [ ] Document pros/cons of each approach
 - [ ] Recommend hosting strategy for EVA docs
